@@ -11,11 +11,7 @@ Latest version can be found on http://www.tlmviewer.com
 YOU CAN BUY ME A COFFEE:
 ========================
 
-USD: https://buymeacoffee.com/dronetales
-BTC: bitcoin:1A1WM3CJzdyEB1P9SzTbkzx38duJD6kau
-BCH: bitcoincash:qre7s8cnkwx24xpzvvfmqzx6ex0ysmq5vuah42q6yz
-ETH: 0xf780b3B7DbE2FC74b5F156cBBE51F67eDeAd8F9a
-
+https://www.tlmviewer.com/donate.htm
 
 
 LICENSE
