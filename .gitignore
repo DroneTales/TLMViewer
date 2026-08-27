@@ -1,0 +1,17 @@
+﻿__history/
+__recovery/
+
+/build/dcu/
+
+*.dsk
+*.identcache
+*.local
+*.stat
+*.tvsconfig
+*.projdata
+*.tlm
+*.csv
+*.exe
+*.dcu
+
+/spektrumTelemetrySensors.h

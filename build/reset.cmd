@@ -1,0 +1,1 @@
+spmtlmviewer.exe /reset

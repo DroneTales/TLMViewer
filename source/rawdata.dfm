@@ -1,0 +1,788 @@
+object fmRawData: TfmRawData
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Raw Sensor Data'
+  ClientHeight = 443
+  ClientWidth = 507
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btClose: TButton
+    Left = 411
+    Top = 407
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = '&Close'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object pcRawData: TPageControl
+    Left = 10
+    Top = 8
+    Width = 489
+    Height = 393
+    ActivePage = tsRawData
+    Style = tsFlatButtons
+    TabOrder = 1
+    object tsRawData: TTabSheet
+      Caption = 'Sensor Raw Data'
+      object laTimestampCaption: TLabel
+        Left = 16
+        Top = 51
+        Width = 67
+        Height = 13
+        Caption = 'Timestamp:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laRawTimestampCaption: TLabel
+        Left = 176
+        Top = 51
+        Width = 27
+        Height = 13
+        Caption = 'Raw:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laRawCaption: TLabel
+        Left = 176
+        Top = 81
+        Width = 30
+        Height = 13
+        Caption = 'Data:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laTimestamp: TLabel
+        Left = 96
+        Top = 51
+        Width = 59
+        Height = 13
+        Caption = 'laTimestamp'
+      end
+      object laFileOffsetCaption: TLabel
+        Left = 16
+        Top = 21
+        Width = 58
+        Height = 13
+        Caption = 'File offset:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laOffset: TLabel
+        Left = 96
+        Top = 21
+        Width = 39
+        Height = 13
+        Caption = 'laOffset'
+      end
+      object laRawTimestamp: TLabel
+        Left = 224
+        Top = 51
+        Width = 80
+        Height = 13
+        Caption = 'laRawTimestamp'
+      end
+      object laRaw: TLabel
+        Left = 224
+        Top = 81
+        Width = 29
+        Height = 13
+        Caption = 'laRaw'
+      end
+      object laSensorIdCaption: TLabel
+        Left = 16
+        Top = 81
+        Width = 58
+        Height = 13
+        Caption = 'Sensor ID:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laSensorId: TLabel
+        Left = 96
+        Top = 81
+        Width = 51
+        Height = 13
+        Caption = 'laSensorId'
+      end
+      object laRawDataCaption: TLabel
+        Left = 16
+        Top = 136
+        Width = 56
+        Height = 13
+        Caption = 'Raw data:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laRawData: TLabel
+        Left = 96
+        Top = 136
+        Width = 52
+        Height = 13
+        Caption = 'laRawData'
+      end
+      object sbCopyOffset: TSpeedButton
+        Left = 449
+        Top = 12
+        Width = 23
+        Height = 22
+        Hint = 'Copy offset to clipboard'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000C40E0000C40E00000000000000000000F5FFF4F7FFF8
+          FDFDFFFFFAFFFFF9FFF2F8F3EAFFD36CA0532E6E222E7A321A6A2D1771280C6D
+          0C1B7A1942924FBAFFD0F8FFFBF8FFFBF1FBF5E3EDE7F3FFF8EEFFEC86AE7750
+          8641A6E09FB0F1B3A7EFB3ABFBB6BAFFB897F1974497523C8C51F7F6FFEDF6F3
+          F1FFEEE8FFE3DCFFD6DDFFD9548E5488C08DE3FFE6DCFFDDE3FFDFD3FFCCD8FF
+          D2CFFFD287DE942A833DE2F0EA6A806D49734437722E236B197BC67833733FAE
+          E3BB90BF983967394A783D2F63233C763C7CC08594E59C227929659B665E955E
+          92CC91ABE9A7ACEDA2C2FFC04A805588BD96D2FFD586C381A3E39790CD8BA2D6
+          B1BEF2CDB1EFAD286E1B1B6C15A9F6A5D8FFD6D0FFCFDDFFD7D4FFD45A8B659C
+          D0A895D59430792915620E246926A9DDBFDFFFF0B5EBAA2C67132485179AF393
+          82C881356E375787578FBC9146724D98CF9EBAFFB981D17E90E28F86D18DA7E0
+          BAC6F6D2AFE29F487B2B287E1A9FF093BCFFB89FDB9E91C792BAECBC578B5C8F
+          C8959BDEA01F67212C752F286E2F24622E89C28BB7F0AB366E2135682CAEE4A1
+          81C0761F64141F691D7DC57F3C7F4198D6A2DDFFEADBFFE5E3FFE7D8FFD48FCF
+          838AD27F549E5247934B406337CAF4BFB2ECA591D6869DE79BA1EEA43B833D8F
+          CC94DBFFEAE2FFF1E8FFF1B8E5B42E70172E7B1A2A762EAEFCBF345D2AACD9A1
+          99CE8F2B6425225C257CB97F55944E99D595E1FFEAE4FFF2E6FFF499C69B2664
+          103C8228B6F6BBD4FFE9447D39B1E8A9DBFFD5E2FFE2DEFFE4E0FFE282B5773B
+          7130A2D2A292BE9A9DC6AB7AA6813A702DD5FFC7E0FFE5DAFFE81B6E12B4FCAF
+          CBFFCCE6FFEBE7FFEEA5C0A6B4D7A59DCA8B4074385C925D4A7A565C8869C4E9
+          C7DDF9DCF8FFF8FBFFFC297F279EE99DDAFFDDE2FFE5EAFFEB9BBB98597C508D
+          B480E5FFD9E2FFDCD5FBD7E7FFEFF3FFFEFAFEFFE3DDE2FFFCFF51925B44864B
+          A0E5A2A5ECA3A6EA9D629F5B3E6D3FC9EECCEFFFEAF6FFEBFCFFECFEFFF5FFF6
+          FFF3E4FFFFF9FFF1E8F2C6FDD666A3712A742C26781F2C821E499740D0FFD9E6
+          FFF2EFFFECFDFFF0FFFFF0FFFEFAFFF0FFFFEFFFFFF7FFFFFBFF}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = sbCopyOffsetClick
+      end
+      object sbCopyTimestamp: TSpeedButton
+        Left = 449
+        Top = 42
+        Width = 23
+        Height = 22
+        Hint = 'Copy raw timestamp to clipboard'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000C40E0000C40E00000000000000000000F5FFF4F7FFF8
+          FDFDFFFFFAFFFFF9FFF2F8F3EAFFD36CA0532E6E222E7A321A6A2D1771280C6D
+          0C1B7A1942924FBAFFD0F8FFFBF8FFFBF1FBF5E3EDE7F3FFF8EEFFEC86AE7750
+          8641A6E09FB0F1B3A7EFB3ABFBB6BAFFB897F1974497523C8C51F7F6FFEDF6F3
+          F1FFEEE8FFE3DCFFD6DDFFD9548E5488C08DE3FFE6DCFFDDE3FFDFD3FFCCD8FF
+          D2CFFFD287DE942A833DE2F0EA6A806D49734437722E236B197BC67833733FAE
+          E3BB90BF983967394A783D2F63233C763C7CC08594E59C227929659B665E955E
+          92CC91ABE9A7ACEDA2C2FFC04A805588BD96D2FFD586C381A3E39790CD8BA2D6
+          B1BEF2CDB1EFAD286E1B1B6C15A9F6A5D8FFD6D0FFCFDDFFD7D4FFD45A8B659C
+          D0A895D59430792915620E246926A9DDBFDFFFF0B5EBAA2C67132485179AF393
+          82C881356E375787578FBC9146724D98CF9EBAFFB981D17E90E28F86D18DA7E0
+          BAC6F6D2AFE29F487B2B287E1A9FF093BCFFB89FDB9E91C792BAECBC578B5C8F
+          C8959BDEA01F67212C752F286E2F24622E89C28BB7F0AB366E2135682CAEE4A1
+          81C0761F64141F691D7DC57F3C7F4198D6A2DDFFEADBFFE5E3FFE7D8FFD48FCF
+          838AD27F549E5247934B406337CAF4BFB2ECA591D6869DE79BA1EEA43B833D8F
+          CC94DBFFEAE2FFF1E8FFF1B8E5B42E70172E7B1A2A762EAEFCBF345D2AACD9A1
+          99CE8F2B6425225C257CB97F55944E99D595E1FFEAE4FFF2E6FFF499C69B2664
+          103C8228B6F6BBD4FFE9447D39B1E8A9DBFFD5E2FFE2DEFFE4E0FFE282B5773B
+          7130A2D2A292BE9A9DC6AB7AA6813A702DD5FFC7E0FFE5DAFFE81B6E12B4FCAF
+          CBFFCCE6FFEBE7FFEEA5C0A6B4D7A59DCA8B4074385C925D4A7A565C8869C4E9
+          C7DDF9DCF8FFF8FBFFFC297F279EE99DDAFFDDE2FFE5EAFFEB9BBB98597C508D
+          B480E5FFD9E2FFDCD5FBD7E7FFEFF3FFFEFAFEFFE3DDE2FFFCFF51925B44864B
+          A0E5A2A5ECA3A6EA9D629F5B3E6D3FC9EECCEFFFEAF6FFEBFCFFECFEFFF5FFF6
+          FFF3E4FFFFF9FFF1E8F2C6FDD666A3712A742C26781F2C821E499740D0FFD9E6
+          FFF2EFFFECFDFFF0FFFFF0FFFEFAFFF0FFFFEFFFFFF7FFFFFBFF}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = sbCopyTimestampClick
+      end
+      object sbCopySensorData: TSpeedButton
+        Left = 449
+        Top = 72
+        Width = 23
+        Height = 22
+        Hint = 'Copy sensor data to clipboard'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000C40E0000C40E00000000000000000000F5FFF4F7FFF8
+          FDFDFFFFFAFFFFF9FFF2F8F3EAFFD36CA0532E6E222E7A321A6A2D1771280C6D
+          0C1B7A1942924FBAFFD0F8FFFBF8FFFBF1FBF5E3EDE7F3FFF8EEFFEC86AE7750
+          8641A6E09FB0F1B3A7EFB3ABFBB6BAFFB897F1974497523C8C51F7F6FFEDF6F3
+          F1FFEEE8FFE3DCFFD6DDFFD9548E5488C08DE3FFE6DCFFDDE3FFDFD3FFCCD8FF
+          D2CFFFD287DE942A833DE2F0EA6A806D49734437722E236B197BC67833733FAE
+          E3BB90BF983967394A783D2F63233C763C7CC08594E59C227929659B665E955E
+          92CC91ABE9A7ACEDA2C2FFC04A805588BD96D2FFD586C381A3E39790CD8BA2D6
+          B1BEF2CDB1EFAD286E1B1B6C15A9F6A5D8FFD6D0FFCFDDFFD7D4FFD45A8B659C
+          D0A895D59430792915620E246926A9DDBFDFFFF0B5EBAA2C67132485179AF393
+          82C881356E375787578FBC9146724D98CF9EBAFFB981D17E90E28F86D18DA7E0
+          BAC6F6D2AFE29F487B2B287E1A9FF093BCFFB89FDB9E91C792BAECBC578B5C8F
+          C8959BDEA01F67212C752F286E2F24622E89C28BB7F0AB366E2135682CAEE4A1
+          81C0761F64141F691D7DC57F3C7F4198D6A2DDFFEADBFFE5E3FFE7D8FFD48FCF
+          838AD27F549E5247934B406337CAF4BFB2ECA591D6869DE79BA1EEA43B833D8F
+          CC94DBFFEAE2FFF1E8FFF1B8E5B42E70172E7B1A2A762EAEFCBF345D2AACD9A1
+          99CE8F2B6425225C257CB97F55944E99D595E1FFEAE4FFF2E6FFF499C69B2664
+          103C8228B6F6BBD4FFE9447D39B1E8A9DBFFD5E2FFE2DEFFE4E0FFE282B5773B
+          7130A2D2A292BE9A9DC6AB7AA6813A702DD5FFC7E0FFE5DAFFE81B6E12B4FCAF
+          CBFFCCE6FFEBE7FFEEA5C0A6B4D7A59DCA8B4074385C925D4A7A565C8869C4E9
+          C7DDF9DCF8FFF8FBFFFC297F279EE99DDAFFDDE2FFE5EAFFEB9BBB98597C508D
+          B480E5FFD9E2FFDCD5FBD7E7FFEFF3FFFEFAFEFFE3DDE2FFFCFF51925B44864B
+          A0E5A2A5ECA3A6EA9D629F5B3E6D3FC9EECCEFFFEAF6FFEBFCFFECFEFFF5FFF6
+          FFF3E4FFFFF9FFF1E8F2C6FDD666A3712A742C26781F2C821E499740D0FFD9E6
+          FFF2EFFFECFDFFF0FFFFF0FFFEFAFFF0FFFFEFFFFFF7FFFFFBFF}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = sbCopySensorDataClick
+      end
+      object sbCopyRaw: TSpeedButton
+        Left = 449
+        Top = 127
+        Width = 23
+        Height = 24
+        Hint = 'Copy raw data to clipboard'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000C40E0000C40E00000000000000000000F5FFF4F7FFF8
+          FDFDFFFFFAFFFFF9FFF2F8F3EAFFD36CA0532E6E222E7A321A6A2D1771280C6D
+          0C1B7A1942924FBAFFD0F8FFFBF8FFFBF1FBF5E3EDE7F3FFF8EEFFEC86AE7750
+          8641A6E09FB0F1B3A7EFB3ABFBB6BAFFB897F1974497523C8C51F7F6FFEDF6F3
+          F1FFEEE8FFE3DCFFD6DDFFD9548E5488C08DE3FFE6DCFFDDE3FFDFD3FFCCD8FF
+          D2CFFFD287DE942A833DE2F0EA6A806D49734437722E236B197BC67833733FAE
+          E3BB90BF983967394A783D2F63233C763C7CC08594E59C227929659B665E955E
+          92CC91ABE9A7ACEDA2C2FFC04A805588BD96D2FFD586C381A3E39790CD8BA2D6
+          B1BEF2CDB1EFAD286E1B1B6C15A9F6A5D8FFD6D0FFCFDDFFD7D4FFD45A8B659C
+          D0A895D59430792915620E246926A9DDBFDFFFF0B5EBAA2C67132485179AF393
+          82C881356E375787578FBC9146724D98CF9EBAFFB981D17E90E28F86D18DA7E0
+          BAC6F6D2AFE29F487B2B287E1A9FF093BCFFB89FDB9E91C792BAECBC578B5C8F
+          C8959BDEA01F67212C752F286E2F24622E89C28BB7F0AB366E2135682CAEE4A1
+          81C0761F64141F691D7DC57F3C7F4198D6A2DDFFEADBFFE5E3FFE7D8FFD48FCF
+          838AD27F549E5247934B406337CAF4BFB2ECA591D6869DE79BA1EEA43B833D8F
+          CC94DBFFEAE2FFF1E8FFF1B8E5B42E70172E7B1A2A762EAEFCBF345D2AACD9A1
+          99CE8F2B6425225C257CB97F55944E99D595E1FFEAE4FFF2E6FFF499C69B2664
+          103C8228B6F6BBD4FFE9447D39B1E8A9DBFFD5E2FFE2DEFFE4E0FFE282B5773B
+          7130A2D2A292BE9A9DC6AB7AA6813A702DD5FFC7E0FFE5DAFFE81B6E12B4FCAF
+          CBFFCCE6FFEBE7FFEEA5C0A6B4D7A59DCA8B4074385C925D4A7A565C8869C4E9
+          C7DDF9DCF8FFF8FBFFFC297F279EE99DDAFFDDE2FFE5EAFFEB9BBB98597C508D
+          B480E5FFD9E2FFDCD5FBD7E7FFEFF3FFFEFAFEFFE3DDE2FFFCFF51925B44864B
+          A0E5A2A5ECA3A6EA9D629F5B3E6D3FC9EECCEFFFEAF6FFEBFCFFECFEFFF5FFF6
+          FFF3E4FFFFF9FFF1E8F2C6FDD666A3712A742C26781F2C821E499740D0FFD9E6
+          FFF2EFFFECFDFFF0FFFFF0FFFEFAFFF0FFFFEFFFFFF7FFFFFBFF}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = sbCopyRawClick
+      end
+      object laRawIdsCaption: TLabel
+        Left = 16
+        Top = 100
+        Width = 49
+        Height = 13
+        Caption = 'Raw IDs:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laRawIds: TLabel
+        Left = 96
+        Top = 100
+        Width = 44
+        Height = 13
+        Caption = 'laRawIds'
+      end
+      object Bevel: TBevel
+        Left = 3
+        Top = 165
+        Width = 475
+        Height = 6
+        Shape = bsTopLine
+      end
+      object pcSensor: TPageControl
+        Left = 3
+        Top = 177
+        Width = 478
+        Height = 182
+        ActivePage = tsSensorFields
+        Style = tsFlatButtons
+        TabOrder = 0
+        object tsSensorFields: TTabSheet
+          Caption = '<UNKNOWN>'
+          object lvStructure: TListView
+            Left = 3
+            Top = 3
+            Width = 464
+            Height = 148
+            Columns = <
+              item
+                Caption = 'Field'
+                Width = 80
+              end
+              item
+                Caption = 'Type'
+                Width = 80
+              end
+              item
+                Caption = 'Data'
+                Width = 250
+              end>
+            GridLines = True
+            HideSelection = False
+            ReadOnly = True
+            RowSelect = True
+            TabOrder = 0
+            ViewStyle = vsReport
+          end
+        end
+        object tsSensorFields2: TTabSheet
+          Caption = '<UNKNOWN>'
+          ImageIndex = 1
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
+          object lvStructure2: TListView
+            Left = 3
+            Top = 3
+            Width = 464
+            Height = 148
+            Columns = <
+              item
+                Caption = 'Field'
+                Width = 80
+              end
+              item
+                Caption = 'Type'
+                Width = 80
+              end
+              item
+                Caption = 'Data'
+                Width = 250
+              end>
+            GridLines = True
+            HideSelection = False
+            ReadOnly = True
+            RowSelect = True
+            TabOrder = 0
+            ViewStyle = vsReport
+          end
+        end
+      end
+    end
+    object tsGpsPosRawData: TTabSheet
+      Caption = 'GPS Position Raw Data'
+      ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object laGpsFileOffsetCaption: TLabel
+        Left = 16
+        Top = 21
+        Width = 58
+        Height = 13
+        Caption = 'File offset:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laGpsOffset: TLabel
+        Left = 96
+        Top = 21
+        Width = 39
+        Height = 13
+        Caption = 'laOffset'
+      end
+      object sbGpsCopyOffset: TSpeedButton
+        Left = 449
+        Top = 12
+        Width = 23
+        Height = 22
+        Hint = 'Copy offset to clipboard'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000C40E0000C40E00000000000000000000F5FFF4F7FFF8
+          FDFDFFFFFAFFFFF9FFF2F8F3EAFFD36CA0532E6E222E7A321A6A2D1771280C6D
+          0C1B7A1942924FBAFFD0F8FFFBF8FFFBF1FBF5E3EDE7F3FFF8EEFFEC86AE7750
+          8641A6E09FB0F1B3A7EFB3ABFBB6BAFFB897F1974497523C8C51F7F6FFEDF6F3
+          F1FFEEE8FFE3DCFFD6DDFFD9548E5488C08DE3FFE6DCFFDDE3FFDFD3FFCCD8FF
+          D2CFFFD287DE942A833DE2F0EA6A806D49734437722E236B197BC67833733FAE
+          E3BB90BF983967394A783D2F63233C763C7CC08594E59C227929659B665E955E
+          92CC91ABE9A7ACEDA2C2FFC04A805588BD96D2FFD586C381A3E39790CD8BA2D6
+          B1BEF2CDB1EFAD286E1B1B6C15A9F6A5D8FFD6D0FFCFDDFFD7D4FFD45A8B659C
+          D0A895D59430792915620E246926A9DDBFDFFFF0B5EBAA2C67132485179AF393
+          82C881356E375787578FBC9146724D98CF9EBAFFB981D17E90E28F86D18DA7E0
+          BAC6F6D2AFE29F487B2B287E1A9FF093BCFFB89FDB9E91C792BAECBC578B5C8F
+          C8959BDEA01F67212C752F286E2F24622E89C28BB7F0AB366E2135682CAEE4A1
+          81C0761F64141F691D7DC57F3C7F4198D6A2DDFFEADBFFE5E3FFE7D8FFD48FCF
+          838AD27F549E5247934B406337CAF4BFB2ECA591D6869DE79BA1EEA43B833D8F
+          CC94DBFFEAE2FFF1E8FFF1B8E5B42E70172E7B1A2A762EAEFCBF345D2AACD9A1
+          99CE8F2B6425225C257CB97F55944E99D595E1FFEAE4FFF2E6FFF499C69B2664
+          103C8228B6F6BBD4FFE9447D39B1E8A9DBFFD5E2FFE2DEFFE4E0FFE282B5773B
+          7130A2D2A292BE9A9DC6AB7AA6813A702DD5FFC7E0FFE5DAFFE81B6E12B4FCAF
+          CBFFCCE6FFEBE7FFEEA5C0A6B4D7A59DCA8B4074385C925D4A7A565C8869C4E9
+          C7DDF9DCF8FFF8FBFFFC297F279EE99DDAFFDDE2FFE5EAFFEB9BBB98597C508D
+          B480E5FFD9E2FFDCD5FBD7E7FFEFF3FFFEFAFEFFE3DDE2FFFCFF51925B44864B
+          A0E5A2A5ECA3A6EA9D629F5B3E6D3FC9EECCEFFFEAF6FFEBFCFFECFEFFF5FFF6
+          FFF3E4FFFFF9FFF1E8F2C6FDD666A3712A742C26781F2C821E499740D0FFD9E6
+          FFF2EFFFECFDFFF0FFFFF0FFFEFAFFF0FFFFEFFFFFF7FFFFFBFF}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = sbGpsCopyOffsetClick
+      end
+      object sbGpsCopyTimestamp: TSpeedButton
+        Left = 449
+        Top = 42
+        Width = 23
+        Height = 22
+        Hint = 'Copy raw timestamp to clipboard'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000C40E0000C40E00000000000000000000F5FFF4F7FFF8
+          FDFDFFFFFAFFFFF9FFF2F8F3EAFFD36CA0532E6E222E7A321A6A2D1771280C6D
+          0C1B7A1942924FBAFFD0F8FFFBF8FFFBF1FBF5E3EDE7F3FFF8EEFFEC86AE7750
+          8641A6E09FB0F1B3A7EFB3ABFBB6BAFFB897F1974497523C8C51F7F6FFEDF6F3
+          F1FFEEE8FFE3DCFFD6DDFFD9548E5488C08DE3FFE6DCFFDDE3FFDFD3FFCCD8FF
+          D2CFFFD287DE942A833DE2F0EA6A806D49734437722E236B197BC67833733FAE
+          E3BB90BF983967394A783D2F63233C763C7CC08594E59C227929659B665E955E
+          92CC91ABE9A7ACEDA2C2FFC04A805588BD96D2FFD586C381A3E39790CD8BA2D6
+          B1BEF2CDB1EFAD286E1B1B6C15A9F6A5D8FFD6D0FFCFDDFFD7D4FFD45A8B659C
+          D0A895D59430792915620E246926A9DDBFDFFFF0B5EBAA2C67132485179AF393
+          82C881356E375787578FBC9146724D98CF9EBAFFB981D17E90E28F86D18DA7E0
+          BAC6F6D2AFE29F487B2B287E1A9FF093BCFFB89FDB9E91C792BAECBC578B5C8F
+          C8959BDEA01F67212C752F286E2F24622E89C28BB7F0AB366E2135682CAEE4A1
+          81C0761F64141F691D7DC57F3C7F4198D6A2DDFFEADBFFE5E3FFE7D8FFD48FCF
+          838AD27F549E5247934B406337CAF4BFB2ECA591D6869DE79BA1EEA43B833D8F
+          CC94DBFFEAE2FFF1E8FFF1B8E5B42E70172E7B1A2A762EAEFCBF345D2AACD9A1
+          99CE8F2B6425225C257CB97F55944E99D595E1FFEAE4FFF2E6FFF499C69B2664
+          103C8228B6F6BBD4FFE9447D39B1E8A9DBFFD5E2FFE2DEFFE4E0FFE282B5773B
+          7130A2D2A292BE9A9DC6AB7AA6813A702DD5FFC7E0FFE5DAFFE81B6E12B4FCAF
+          CBFFCCE6FFEBE7FFEEA5C0A6B4D7A59DCA8B4074385C925D4A7A565C8869C4E9
+          C7DDF9DCF8FFF8FBFFFC297F279EE99DDAFFDDE2FFE5EAFFEB9BBB98597C508D
+          B480E5FFD9E2FFDCD5FBD7E7FFEFF3FFFEFAFEFFE3DDE2FFFCFF51925B44864B
+          A0E5A2A5ECA3A6EA9D629F5B3E6D3FC9EECCEFFFEAF6FFEBFCFFECFEFFF5FFF6
+          FFF3E4FFFFF9FFF1E8F2C6FDD666A3712A742C26781F2C821E499740D0FFD9E6
+          FFF2EFFFECFDFFF0FFFFF0FFFEFAFFF0FFFFEFFFFFF7FFFFFBFF}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = sbGpsCopyTimestampClick
+      end
+      object laGpsRawTimestamp: TLabel
+        Left = 224
+        Top = 51
+        Width = 80
+        Height = 13
+        Caption = 'laRawTimestamp'
+      end
+      object laGpsRawTimestampCaption: TLabel
+        Left = 176
+        Top = 51
+        Width = 27
+        Height = 13
+        Caption = 'Raw:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laGpsTimestamp: TLabel
+        Left = 96
+        Top = 51
+        Width = 59
+        Height = 13
+        Caption = 'laTimestamp'
+      end
+      object laGpsTimestampCaption: TLabel
+        Left = 16
+        Top = 51
+        Width = 67
+        Height = 13
+        Caption = 'Timestamp:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laGpsSensorIdCaption: TLabel
+        Left = 16
+        Top = 81
+        Width = 58
+        Height = 13
+        Caption = 'Sensor ID:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laGpsRawDataCaption: TLabel
+        Left = 16
+        Top = 136
+        Width = 56
+        Height = 13
+        Caption = 'Raw data:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laGpsRawData: TLabel
+        Left = 96
+        Top = 136
+        Width = 52
+        Height = 13
+        Caption = 'laRawData'
+      end
+      object laGpsSensorId: TLabel
+        Left = 96
+        Top = 81
+        Width = 51
+        Height = 13
+        Caption = 'laSensorId'
+      end
+      object laGpsRawCaption: TLabel
+        Left = 176
+        Top = 81
+        Width = 30
+        Height = 13
+        Caption = 'Data:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laGpsRaw: TLabel
+        Left = 224
+        Top = 81
+        Width = 29
+        Height = 13
+        Caption = 'laRaw'
+      end
+      object sbGpsCopySensorData: TSpeedButton
+        Left = 449
+        Top = 72
+        Width = 23
+        Height = 22
+        Hint = 'Copy sensor data to clipboard'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000C40E0000C40E00000000000000000000F5FFF4F7FFF8
+          FDFDFFFFFAFFFFF9FFF2F8F3EAFFD36CA0532E6E222E7A321A6A2D1771280C6D
+          0C1B7A1942924FBAFFD0F8FFFBF8FFFBF1FBF5E3EDE7F3FFF8EEFFEC86AE7750
+          8641A6E09FB0F1B3A7EFB3ABFBB6BAFFB897F1974497523C8C51F7F6FFEDF6F3
+          F1FFEEE8FFE3DCFFD6DDFFD9548E5488C08DE3FFE6DCFFDDE3FFDFD3FFCCD8FF
+          D2CFFFD287DE942A833DE2F0EA6A806D49734437722E236B197BC67833733FAE
+          E3BB90BF983967394A783D2F63233C763C7CC08594E59C227929659B665E955E
+          92CC91ABE9A7ACEDA2C2FFC04A805588BD96D2FFD586C381A3E39790CD8BA2D6
+          B1BEF2CDB1EFAD286E1B1B6C15A9F6A5D8FFD6D0FFCFDDFFD7D4FFD45A8B659C
+          D0A895D59430792915620E246926A9DDBFDFFFF0B5EBAA2C67132485179AF393
+          82C881356E375787578FBC9146724D98CF9EBAFFB981D17E90E28F86D18DA7E0
+          BAC6F6D2AFE29F487B2B287E1A9FF093BCFFB89FDB9E91C792BAECBC578B5C8F
+          C8959BDEA01F67212C752F286E2F24622E89C28BB7F0AB366E2135682CAEE4A1
+          81C0761F64141F691D7DC57F3C7F4198D6A2DDFFEADBFFE5E3FFE7D8FFD48FCF
+          838AD27F549E5247934B406337CAF4BFB2ECA591D6869DE79BA1EEA43B833D8F
+          CC94DBFFEAE2FFF1E8FFF1B8E5B42E70172E7B1A2A762EAEFCBF345D2AACD9A1
+          99CE8F2B6425225C257CB97F55944E99D595E1FFEAE4FFF2E6FFF499C69B2664
+          103C8228B6F6BBD4FFE9447D39B1E8A9DBFFD5E2FFE2DEFFE4E0FFE282B5773B
+          7130A2D2A292BE9A9DC6AB7AA6813A702DD5FFC7E0FFE5DAFFE81B6E12B4FCAF
+          CBFFCCE6FFEBE7FFEEA5C0A6B4D7A59DCA8B4074385C925D4A7A565C8869C4E9
+          C7DDF9DCF8FFF8FBFFFC297F279EE99DDAFFDDE2FFE5EAFFEB9BBB98597C508D
+          B480E5FFD9E2FFDCD5FBD7E7FFEFF3FFFEFAFEFFE3DDE2FFFCFF51925B44864B
+          A0E5A2A5ECA3A6EA9D629F5B3E6D3FC9EECCEFFFEAF6FFEBFCFFECFEFFF5FFF6
+          FFF3E4FFFFF9FFF1E8F2C6FDD666A3712A742C26781F2C821E499740D0FFD9E6
+          FFF2EFFFECFDFFF0FFFFF0FFFEFAFFF0FFFFEFFFFFF7FFFFFBFF}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = sbGpsCopySensorDataClick
+      end
+      object sbGpsCopyRaw: TSpeedButton
+        Left = 449
+        Top = 127
+        Width = 23
+        Height = 24
+        Hint = 'Copy raw data to clipboard'
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000C40E0000C40E00000000000000000000F5FFF4F7FFF8
+          FDFDFFFFFAFFFFF9FFF2F8F3EAFFD36CA0532E6E222E7A321A6A2D1771280C6D
+          0C1B7A1942924FBAFFD0F8FFFBF8FFFBF1FBF5E3EDE7F3FFF8EEFFEC86AE7750
+          8641A6E09FB0F1B3A7EFB3ABFBB6BAFFB897F1974497523C8C51F7F6FFEDF6F3
+          F1FFEEE8FFE3DCFFD6DDFFD9548E5488C08DE3FFE6DCFFDDE3FFDFD3FFCCD8FF
+          D2CFFFD287DE942A833DE2F0EA6A806D49734437722E236B197BC67833733FAE
+          E3BB90BF983967394A783D2F63233C763C7CC08594E59C227929659B665E955E
+          92CC91ABE9A7ACEDA2C2FFC04A805588BD96D2FFD586C381A3E39790CD8BA2D6
+          B1BEF2CDB1EFAD286E1B1B6C15A9F6A5D8FFD6D0FFCFDDFFD7D4FFD45A8B659C
+          D0A895D59430792915620E246926A9DDBFDFFFF0B5EBAA2C67132485179AF393
+          82C881356E375787578FBC9146724D98CF9EBAFFB981D17E90E28F86D18DA7E0
+          BAC6F6D2AFE29F487B2B287E1A9FF093BCFFB89FDB9E91C792BAECBC578B5C8F
+          C8959BDEA01F67212C752F286E2F24622E89C28BB7F0AB366E2135682CAEE4A1
+          81C0761F64141F691D7DC57F3C7F4198D6A2DDFFEADBFFE5E3FFE7D8FFD48FCF
+          838AD27F549E5247934B406337CAF4BFB2ECA591D6869DE79BA1EEA43B833D8F
+          CC94DBFFEAE2FFF1E8FFF1B8E5B42E70172E7B1A2A762EAEFCBF345D2AACD9A1
+          99CE8F2B6425225C257CB97F55944E99D595E1FFEAE4FFF2E6FFF499C69B2664
+          103C8228B6F6BBD4FFE9447D39B1E8A9DBFFD5E2FFE2DEFFE4E0FFE282B5773B
+          7130A2D2A292BE9A9DC6AB7AA6813A702DD5FFC7E0FFE5DAFFE81B6E12B4FCAF
+          CBFFCCE6FFEBE7FFEEA5C0A6B4D7A59DCA8B4074385C925D4A7A565C8869C4E9
+          C7DDF9DCF8FFF8FBFFFC297F279EE99DDAFFDDE2FFE5EAFFEB9BBB98597C508D
+          B480E5FFD9E2FFDCD5FBD7E7FFEFF3FFFEFAFEFFE3DDE2FFFCFF51925B44864B
+          A0E5A2A5ECA3A6EA9D629F5B3E6D3FC9EECCEFFFEAF6FFEBFCFFECFEFFF5FFF6
+          FFF3E4FFFFF9FFF1E8F2C6FDD666A3712A742C26781F2C821E499740D0FFD9E6
+          FFF2EFFFECFDFFF0FFFFF0FFFEFAFFF0FFFFEFFFFFF7FFFFFBFF}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = sbGpsCopyRawClick
+      end
+      object laGpsRawIdsCaption: TLabel
+        Left = 16
+        Top = 100
+        Width = 49
+        Height = 13
+        Caption = 'Raw IDs:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object laGpsRawIds: TLabel
+        Left = 96
+        Top = 100
+        Width = 44
+        Height = 13
+        Caption = 'laRawIds'
+      end
+      object GpsBevel: TBevel
+        Left = 3
+        Top = 165
+        Width = 475
+        Height = 6
+        Shape = bsTopLine
+      end
+      object pcGpsSensor: TPageControl
+        Left = 3
+        Top = 177
+        Width = 478
+        Height = 182
+        ActivePage = tsGpsSensorFields
+        Style = tsFlatButtons
+        TabOrder = 0
+        object tsGpsSensorFields: TTabSheet
+          Caption = '<UNKNOWN>'
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
+          object lvStructureGps: TListView
+            Left = 3
+            Top = 3
+            Width = 464
+            Height = 148
+            Columns = <
+              item
+                Caption = 'Field'
+                Width = 80
+              end
+              item
+                Caption = 'Type'
+                Width = 80
+              end
+              item
+                Caption = 'Data'
+                Width = 250
+              end>
+            GridLines = True
+            HideSelection = False
+            ReadOnly = True
+            RowSelect = True
+            TabOrder = 0
+            ViewStyle = vsReport
+          end
+        end
+      end
+    end
+  end
+  object bbPrev: TBitBtn
+    Left = 15
+    Top = 407
+    Width = 75
+    Height = 25
+    Action = acPrev
+    Caption = '&Prev'
+    TabOrder = 2
+  end
+  object bbNext: TBitBtn
+    Left = 96
+    Top = 407
+    Width = 75
+    Height = 25
+    Action = acNext
+    Caption = '&Next'
+    TabOrder = 3
+  end
+  object ActionList: TActionList
+    Left = 267
+    Top = 392
+    object acPrev: TAction
+      Caption = '&Prev'
+      Hint = 'Move to previous record'
+      ShortCut = 37
+      OnExecute = acPrevExecute
+      OnUpdate = acPrevUpdate
+    end
+    object acNext: TAction
+      Caption = '&Next'
+      Hint = 'Move to next record'
+      ShortCut = 39
+      OnExecute = acNextExecute
+      OnUpdate = acNextUpdate
+    end
+  end
+end

@@ -1,0 +1,638 @@
+Versions History
+================
+
+12.06.2026 (1.23.0.63)
+=======================
+* Minor optimization.
+* The bug with incorrect GPS track length in the Imperial system has been fixed.
+
+27.12.2025 (1.23.0.60)
+=======================
+* Fixed fast boot detection bug.
+
+08.10.2025 (1.23.0.59)
+=======================
+* Fixed an issue where the graph would not show standard telemetry if any post-processing was selected.
+
+07.10.2025 (1.23.0.55)
+=======================
+* Fixed graph building bug when Fastbooted field is selected for graphic.
+
+18.09.2025 (1.23.0.52)
+=======================
+* Fixed bug with model name reading.
+* Fixed bug with incorrect KML file creating when model name was read with error.
+
+06.09.2025 (1.23.0.49)
+=======================
+* Button to open the software documentation.
+
+15.08.2025 (1.23.0.46)
+=======================
+* New "Fast Booted" field for Standard telemetry.
+* New "Uptime" field for Standard telemetry.
+
+24.05.2025 (1.23.0.44)
+=======================
+* Show raw data for AltZero messages.
+
+23.05.2025 (1.23.0.41)
+=======================
+* Fixed bug with incorrect AltZero offset timestamp.
+* Now you can delete AltZero offsets.
+
+18.05.2025 (1.23.0.39)
+=======================
+* Correct export sessions with AltZero messages.
+* Adding AltZero message to the current Session for Altimeter, Variometer and GPS sensors.
+
+
+18.05.2025 (1.23.0.34)
+=======================
+* AltZero offsets dialog: shows when the user resets the altitude.
+* The AltZero offsets dialog applied to Altitude and Variometer sensors.
+* Minor UI fixes.
+* Application settings dialog redesigned.
+
+17.05.2025 (1.23.0.30)
+=======================
+* AltZero message processing for Altitude.
+* AltZero message processing for GPS.
+* AltZero message processing for Variometer.
+
+30.09.2024 (1.22.0.180)
+=======================
+* JetCat turbine status updated.
+* JetCent turbine support.
+* SwiWin turbine support.
+* Fixed bug when 14S LiPo Monitor data not shown.
+* Voltage sensor.
+* Read GPS settings from TLM file.
+* Show GPS settings.
+* Highlights rows when GPS distance exceeds GeoFence settings and GPS alarm enabled.
+
+
+21.01.2024 (1.22.0.155)
+=======================
+* Fixed model name decoding.
+
+06.11.2023 (1.22.0.151)
+=======================
+* TimeZone settings for session date/time.
+* Fixed incorrect GPS track distance calculation.
+
+04.10.2023 (1.22.0.148)
+=======================
+* Copy selected records to clipboard.
+* Application manual: https://www.buymeacoffee.com/dronetales/spektrum-telemetry-file-viewer.
+
+07.03.2023 (1.22.0.137)
+=======================
+* Raw Data: Smart Battery structures.
+* Raw Data: TX Input structures.
+* Raw Data: optimization (now it works much faster).
+
+07.03.2023 (1.22.0.133)
+=======================
+* Raw Data: now it can decode structures as they are defined in spektrum headers what makes it easy to analize data.
+  Not for all sensors temporary.
+
+06.03.2023 (1.22.0.130)
+=======================
+* Now you can easy move by records in Raw Data Dialog (Left/Right cursor arraws) without closing the dialog.
+
+05.03.2023 (1.22.0.125)
+=======================
+* Raw data dialog updated to show both GPS data: Location and Status.
+
+25.06.2022 (1.22.0.118)
+=======================
+* Fixed Gyro sensor values calculation.
+
+25.06.2022 (1.22.0.114)
+=======================
+* Autoscale for Radio Inputs.
+* Column editor dialog updated with 2 buttons: "Show all" and "Hide all".
+
+23.06.2022 (1.22.0.111)
+=======================
+* Binding type detection fixed.
+* Surface radio binding types support.
+
+22.04.2022 (1.22.0.110)
+=======================
+* GPS data filtering to prevent from abnormal distance and location detection.
+
+21.04.2022 (1.22.0.107)
+=======================
+* File raw data menu enabled only if post processing set to None.
+* Turbine sensor data processing reworked for better analyzing.
+* Better duplicate records (the records with identical timestamp) filtering.
+
+16.03.2022 (1.22.0.101)
+=======================
+* Restoring column defaults (width, visible state). Usefull if a column width was set to zero somehow.
+
+08.01.2022 (1.22.0.98)
+======================
+* Fixed Smart Battery invalid value displayed in case of "no data".
+
+23.06.2021 (1.22.0.96)
+======================
+* By default "New parser" used.
+* UI fixes.
+
+19.04.2021 (1.22.0.92)
+======================
+* TX Input data columns name editing (changing).
+
+12.04.2021 (1.22.0.90)
+======================
+* Separate dialog for columns visability editing (can be changed in Settings).
+
+30.03.2021 (1.22.0.88)
+======================
+* Fixed problem with reading some TLM files using "New parser".
+* Fixed access violation appeared when exporting single session.
+* Fixed floating point when exporting all sessions and there is only one session.
+* Fixed problem with exporting all sessions and no one session selected.
+
+15.02.2021 (1.22.0.79)
+======================
+* Fixed bug with sort ordering changed when other column selected.
+* Fixed issue with reading some TLM files generated by iX12.
+* Sticks telemetry (logging).
+* Shows raw data and offset in TLM file.
+
+27.11.2020 (1.22.0.57)
+======================
+* Fixed bug with opening read-only files.
+
+15.09.2020 (1.22.0.55)
+======================
+* Fixed bug in TexGen exporting.
+* Minor UI tweaks.
+
+03.07.2020 (1.22.0.50)
+======================
+* Compass Sensor: heading value has been added.
+
+02.07.2020 (1.22.0.47)
+======================
+* Minor bug in CSV export has been fixed.
+* Graphic auto scale for Tank Pressure sensor.
+
+28.06.2020 (1.22.0.44)
+======================
+* Fixed wrong Timestamp value when exporting mixed data to CSV.
+
+24.06.2020 (1.22.0.41)
+======================
+* Multi-cylinder temperature sensor now can show temperature in Celsius and Fahrenheit.
+* Graphic auto scale for Multi-cylinder sensor.
+
+22.05.2020 (1.22.0.39)
+======================
+* Fixed bug in Text Generator parsering.
+
+19.05.2020 (1.22.0.38)
+======================
+* Telemetry high time gap highlighting.
+* GPS track summary information.
+
+13.05.2020 (1.22.0.29)
+======================
+* Fixed bug in RX Telemetry Warnings.
+* Fixed bug in User Defined sensor data processing.
+
+25.03.2020 (1.22.0.25)
+======================
+* Fixed bug in showing Multi Cylinder sensor.
+
+
+24.03.2020 (1.22.0.23)
+======================
+* Session editing:
+  Select one (or more) record and click Delete key.
+  Do not forget to export session (ot the app asks when you switch to
+  other session).
+
+01.03.2020 (1.22.0.20)
+======================
+* Multi-cylinder temperature sensor support.
+* Minor bugs fixed.
+
+19.01.2020 (1.22.0.13)
+======================
+* Fixed "argument out of range" exception.
+
+23.12.2019 (1.22.0.11)
+======================
+* Tank pressure sensor support.
+
+27.09.2019 (1.22.0.5)
+=====================
+* Fixed bug in Peak filtering for PowerBox sensor.
+
+21.09.2019 (1.22.0.3)
+=====================
+* Fixed issue with incorrect RSSI channel (A/B) detection for SPM4650 SRLX2 receiver.
+* Show RSSI % instead of A loss for Lemon RX.
+* Fixed issue with A, B, R, L shown as n/a when Smooth or Peak filtering is selected.
+* Enabling and disabling RX telemetry filtering in case of Peak or Smooth filtering is selected (by default it is disabled).
+* Smart Battery Telemetry support.
+
+17.09.2019 (1.21.0.59)
+======================
+* Fixed issue with not showing RX telemetry when filtering is turned ON with serial based receivers (SPM4649T and SPM4650).
+* For Standard Telemetry if RPM is less than or equal to 999 the RPM value shown as n/a.
+* Show RSSI % instead of B level dBm for SPM4650 SRLX2 receiver.
+
+07.09.2019
+==========
+* Fixed bug in Flight Pack sensor temperature parsering.
+
+05.06.2019
+==========
+* Fuel flow/capacity sensor support.
+
+14.04.2019
+==========
+* TBS Crossfire QOS telemetry support.
+
+17.01.2019
+==========
+* Fixed Timestamp read error (when Timetamp is too high).
+
+14.01.2019
+==========
+* Fixed bug in new parser that prevents from reading some files generated by DX9 and some other TXs.
+
+13.01.2019
+==========
+* New parser selection dialog.
+* Export mixed data (data from few sensors) into single CSV file.
+
+25.09.2018
+==========
+* Precision (decimal digits) settings for graph.
+
+
+27.08.2018
+==========
+* Deleting selected session.
+
+09.08.2018
+==========
+* File name in graph window.
+
+05.07.2018
+==========
+* Bind type detection updated.
+
+01.05.2018
+==========
+* Fixed "Invalid Pointer Operation" bug that appeared when switching parser after opening TLM file.
+
+26.04.2018
+==========
+* Fixed bug in New Parser that issues wrong model name and sensors settings reading.
+
+09.04.2018
+==========
+* Fixed issue with exporting to CSV file when the system default decimal separator is other than '.'.
+* New parser with better support for iX12 and next versions of the AirWare.
+* You can change poles/ratio settings for session if it appears incorrect.
+* Export all sessions in single TLM files.
+* Text Generator support.
+* Session's date and time (iX12 only).
+
+14.02.2018
+==========
+* Fixed home distance calcualtion when GPS data lost.
+
+01.02.2018
+==========
+* Fixed bug with Imperial units in GPS Distance calculation.
+
+31.01.2018
+==========
+* Claculating distance to HOME for GPS sensor.
+
+04.12.2017
+==========
+* Fixed bug with wrong fields format exported into CSV file.
+
+18.11.2017
+==========
+* Minor fixes.
+
+11.10.2017
+==========
+* Changed display order for RX telemetry (QoS): R<->L.
+
+03.08.2017
+==========
+* Fixed bug with Metric/Imperisl units changing on startup.
+
+09.04.2017
+==========
+* Fixed RPM calculation for ESC sensor.
+
+21.03.2017
+==========
+* Fixed wrong parsering of user defined sensors.
+
+16.03.2017
+==========
+* User defined sensors reading.
+* You can rename fields for user defined sensors (right click on the grid and select "Rename").
+
+16.02.2017
+==========
+* Attitude and Mag Compass Sensor added.
+* Fixed problem with RX telemetry when it shows big values (telemetry lost detection):
+  use Peak filter to hide those values.
+
+
+06.02.2017
+==========
+* Sensor processing reworked, speed improvement.
+* Fixed bug with Air Speed sensor processing when it shows big values on start.
+* Fixed bug with Altitude sensor processed when it shows big values on start.
+* Fixed minor bugs in sensor process for Simple and Peak filtering.
+* Fixed Gyro Sensor rate calculation.
+* Fixed bug with temperature calculation from 6S Lipomon sensor.
+* Turbine Sensor support.
+
+04.02.2017
+==========
+* Alarms for PowerBox Sensor.
+* Data processing updates.
+* Preparation for JetCat/Turbine sensor.
+
+27.01.2017
+==========
+* Code optimization.
+
+25.01.2017
+==========
+* Fixed bug in 6S LiPo Monitor Sensor.
+* 14S LiPo Monitor Sensor has been added.
+* 3-Axis Gyro Sensor has been added.
+
+12.12.2016
+==========
+* Signal level (dBm) for standard telemetry.
+
+14.11.2016
+==========
+* 6S LiPo Monitor Sensor has been added.
+
+11.11.2016
+==========
+* Lap Timer sensor added.
+
+27.09.2016
+==========
+* One more small change in UI. Just to make it looks better.
+
+24.09.2016
+==========
+* Small changes in UI. When you open TLM file by clicking on it in Explorer the progress dialog appears before the splash screen.
+  Changed so now the progress dialog appears on top of the splash. Just for better look.
+
+11.09.2016
+==========
+* Telemetry warnings.
+* Tables scrolling speed improvement on big data (long flights).
+
+09.09.2016
+==========
+* Fixed RSSI reading on Lemon Telemetry.
+* ESC RPM calculation fixed (when Poles are set to INH).
+
+29.08.2016
+==========
+* Fixed GPS altitude calculation bug (it did not see any altitude above 999.9 meters).
+
+05.08.2016
+==========
+* Graph settings changed so you can not change things you should not change.
+
+25.07.2016
+==========
+* Exporting GPS data into CSV file.
+* Exporting GPS Data into TLM file.
+* When "Export All" is checked the only CSV export is possible.
+* Ctrl+C copies graph into Clipboard.
+* Fixed bug with some graph settings restoring.
+* Fixed bug with graph zoom reset (zoom off) restoring.
+
+12.07.2016
+==========
+* Global graph setting for storing/not storing scaling (zooming) has been added.
+* Minimizing application when graph window is showing.
+* Export sessions to TLM file.
+* Fixed bug when "Out of range" exception appears when change settings.
+* Now application remembers the active Tab when you switching between sessions.
+
+11.07.2016
+==========
+* Saving/loading zooming for X and Y axis (per axis/channel name, not per model).
+* Saving/loading pan/zoom mouse operation.
+
+04.07.2016
+==========
+* minor bugs fixed.
+* export all sessions into single CVS (for selected sensor).
+
+09.04.2016
+==========
+* Current sensor parsering reworked.
+* PowerBox sensor parsering reworked.
+* Airspeed sensor parsering reworked.
+* Altitude sensor parsering reworked.
+* Variometer sensor parsering reworked.
+* Standard Telemetry sensor parsering reworked.
+* Flight Pack sensor parsering reworked.
+* Accelerometer (G-Force) sensor parsering reworked.
+* RX Pack (Dual Energy) sensor parsering reworked.
+* RX telemetry parsering reworked.
+* Airspeed sensor Air Speed Max reading added.
+* Flight Pack sensor second battery data added.
+* RX Pack (Dual Energy) sensor second battery data added.
+* Fixed bug when RX telemetry has not been shown.
+* RX Pack sensor power calculation added.
+* ESC sensor power calculation added.
+* Settings for data post processing added.
+* When displaing the data graph without postprocessing it uses the Point mode
+  by default to show when yout telemetry data lost (you can change it in graph
+  settings for analizing).
+* reset.cmd file has been added to fast reset the application settings to its
+  default values.
+* This version requires resseting the application settings to the default values.
+  Run it with reset.cmd for first time.
+* Four postprocessing types have been implemented:
+  1. Postprocessing: None - Does not apply any postprocessing to the sensor data.
+     Graph showing in Dot Mode by default. Can be used to find telemetry issues.
+  2. Postprocessing: Simple filter - Applies very simple filtering of invalid data.
+  3. Postprocessing: Peak filter - Applies peak filter to the sensor data.
+  4. Postprocessing: Smooth - Applies complex filter to the sensor data. Can be
+     ajusted by changing the Apperture parameter.
+  The Peak filter may not work good for some files.
+
+23.03.2016
+----------
+* RPM filtering.
+
+01.03.2016
+----------
+* Small bugs fixed.
+
+15.02.2016
+----------
+* Some filtering improvement.
+
+05.02.2016
+----------
+* Fixed bug when you can hide all data pages and then can not restore them (popup menu does not popup when no one data tab is visible).
+  Now it does not allow to hide all data pages, one always stay visible.
+* Fixed bug when you can not restore hidden data page after application restart as hidden pages did not shown in popup menu.
+* Fixed model name reading for 1.10 firmware.
+* Fixed RX telemetry filtering when it may discard correct data.
+
+04.02.2016
+----------
+* Fixed bug in RX filter when the app does not show values for A, B, R, L above 20.
+* When R value in RX Telemetry is above 65000 (what means R value is not supported) it shows as 0 now.
+
+03.02.2016
+----------
+* Filter for RX Sensor (A, B, L, R) data.
+
+02.02.2016
+----------
+* Added very basic data filtering for RX Telemetry.
+* Fixed bug with wrong timestamp displaying.
+* Duplicate records filtering.
+* Fix for RPM sensor RPM calculation. The problem appeared when you do not have Poles and Ratio settings in your TX for RPM sensor.
+
+12.01.2016
+----------
+* Fixed bug with shown "hidden" data (columns) on a single graph view.
+* Fixed bug with wrong RPM calculationfor ESC sensor.
+* Fixed bug with Access Violation when closing application without opening TLM file.
+* Some fixes in graph settings restoring and saving.
+* 64 bit version temporary removed as I can not solve graph building issue yet.
+
+11.01.2016
+----------
+* ESC RPM Poles and Ratio calculation.
+* ESC RPM Calculation depending on ESC Poles and Ratio settings.
+* Poles and Ratio values for Session: if there are Poles and Ratio settings available for TM1000 or TM1100 modules
+  then it shows these values. Otherwise it trys to use Poles and Ratio settings from ESC sensor (if it presents).
+* Now you can setup visible data tabs for each model (rightclick on the tab and check/uncheck required).
+
+10.01.2016
+----------
+* Fixed bug with ESC data displaying.
+* Fixed bug with wrong BEC and FET temperature calculation (for ESC Telemetry).
+
+04.01.2016
+----------
+* 64 bit version.
+
+07.12.2015
+----------
+* Graph data hint color changing.
+
+06.12.2015
+----------
+* Fixed bug with graph colors on first run.
+* In global graph settings you can restore default graph colors.
+* New you can change graph toolbar buttons size in global graph settings.
+* Show hide columns (right click on View and check/uncheck columns).
+
+25.11.2015
+----------
+* Global Graph Colors settings.
+
+24.11.2015
+----------
+* Small bug fixes.
+
+22.11.2015
+----------
+* Saving/restoring graph channels color and line width.
+* Saving/restoring Mix graph settings.
+* Small bug fixes (one more GPS calculation).
+
+21.11.2015
+----------
+* Fixed issue with parsering files with corrupter model information.
+* GPS Data Filtering.
+* Temperature Units settings (Celcius / Fahrenheit).
+* Length Units settings (metric / imperial).
+
+20.11.2015
+----------
+* Number format on the graph now uses correct precition.
+* Time on the graph cursor (vertical cursor) now shows correctly when you move cursor to the left.
+* Hint on the graph now shows correct numbers precition.
+* Fixed wrong GPS coordinate calculation.
+* Fixed wrong KML file creation on systems with a decimal separator other than '.'.
+
+19.11.2015
+----------
+* GPS Sensor support.
+* Export to KML.
+* Export to CSV now always ordered by Timestamp.
+
+19.11.2015
+----------
+* Mixing data from different sensors on a single graph.
+* Fixed graph building for more than 2 mixed values.
+* Fixed graph building speed reducing bug.
+* Y-Axis settings saving for Single Graph Mode.
+* Preparing graph speed optimization.
+* X-Axis now shows time-line as in tabular view (HH:MM:SS.ms).
+* Zero lines on graph have removed.
+
+18.11.2015
+----------
+* Files Drag-and-Drop support.
+* File Association.
+* Graphic settings stores for each model (by model name).
+* Reset settings.
+* Saving/restoring main window position and size.
+* Saving/restoring graphics window position and size.
+* Command line parameters.
+* Timestamp on graph fixed.
+* Timestamp calculation fixed.
+
+17.11.2015
+----------
+* Data graphics.
+* Code optimization.
+* Speed optimization.
+* Data graphics reworked.
+* Perfomance improvment.
+* Virometer sensor.
+* Flight Pack Temperature Measure fixed.
+* ESC Throttle and Output percentage read fixed.
+
+16.11.2015
+----------
+* Flight Pack Capacity Sensor reading.
+* RX Capacity Sensor reading.
+* Columns size saving and restoring.
+* Wrong value sorting fixed.
+
+15.11.2015
+----------
+* Data grids sorting by clicking on a column.
+
+14.11.2015
+----------
+* The first public version was released.
